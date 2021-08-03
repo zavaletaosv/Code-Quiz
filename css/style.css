@@ -3,4 +3,13 @@ body {
     font-size: 120%;
 }
 
+a {
+    color: lightcoral;
+    text-decoration: none;
+    transition: color 0.1s;
+}
+
+a:hover {
+    color:lightpink;
+}
 
