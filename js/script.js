@@ -45,3 +45,5 @@ function showQuestion() {
         answersElement.appendChild(answerNode);
     });
 }
+
+startButton.onclick = quizStart;
