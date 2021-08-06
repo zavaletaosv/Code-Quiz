@@ -90,4 +90,13 @@ function quizEnd() {
     questionsElement.setAttribute("class", "hide");
 }
 
+function runTime() {
+    time--;
+    timerElement.textContent = time;
+
+    if (time <= 0) {
+        quizEnd();
+    }
+}
+
 startButton.onclick = quizStart;
