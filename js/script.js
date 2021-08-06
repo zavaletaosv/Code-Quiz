@@ -23,3 +23,25 @@ function quizStart() {
 
     showQuestion();
 }
+
+function showQuestion() {
+
+    var question = questions[currentQuestion];
+
+    var titleElement = document.getElementById("questions-title");
+    titleElement.textContent = question.title;
+
+    answersElement.innerHTML = "";
+
+    question.answers.forEach(function(answer, i) {
+
+        var answerNode = document.createElement("button");
+
+        answerNode.setAttribute("class", "answer");
+        answerNode.setAttribute("value", answer);
+        answerNode.textContent = i + 1 + "." + answer;
+        answerNode.onclick = questionClick;
+
+        answersElement.appendChild(answerNode);
+    });
+}
