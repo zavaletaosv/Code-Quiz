@@ -46,4 +46,35 @@ function showQuestion() {
     });
 }
 
+function questionClick() {
+
+    if (this.value !== questions[currentQuestion].answer) {
+
+        time -= 15;
+
+        if (time < 0) {
+            time =0;
+        }
+
+        timerElement.textContent =time;
+
+        feedbackElement.textContent = "Incorrect!";
+    } else {
+        feedbackElement.textContent = "Correct!";
+    }
+
+    feedbackElement.setAttribute("class", "feedback");
+    setTimeout(function() {
+        feedbackElement.setAttribute("class", "feedback hide");
+    }, 1000);
+
+    currentQuestion++;
+
+    if (currentQuestion === questions.length) {
+        quizEnd();
+    } else {
+        showQuestion();
+    }
+}
+
 startButton.onclick = quizStart;
