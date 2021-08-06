@@ -77,4 +77,17 @@ function questionClick() {
     }
 }
 
+function quizEnd() {
+
+    clearInterval(timerId);
+
+    var endScreenElement = document.getElementById("quiz-end");
+    endScreenElement.removeAttribute("class");
+
+    var finalScoreElement = document.getElementById("final-score");
+    finalScoreElement.textContent = time;
+
+    questionsElement.setAttribute("class", "hide");
+}
+
 startButton.onclick = quizStart;
