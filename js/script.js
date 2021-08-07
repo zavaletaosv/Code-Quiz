@@ -28,7 +28,7 @@ function showQuestion() {
 
     var question = questions[currentQuestion];
 
-    var titleElement = document.getElementById("questions-title");
+    var titleElement = document.getElementById("question-title");
     titleElement.textContent = question.title;
 
     answersElement.innerHTML = "";
@@ -118,5 +118,14 @@ function saveScore() {
     }
 }
 
+function checkForEnter(event) {
+
+    if (event.key === "Enter") {
+        saveScore();
+    }
+}
+
 startButton.onclick = quizStart;
 submitButton.onclick = saveScore;
+
+initialsElement.onkeyup = checkForEnter;
