@@ -13,7 +13,9 @@ Deployed Website Link:
 
 Once deployed, the application appears as the image attached below on a traditional desktop.
 
-
+<img
+src = "./images/quiz.png"
+alt = "A screenshot of the Quiz start page" />
 
 ## Resources
 
