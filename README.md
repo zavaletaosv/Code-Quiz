@@ -1,14 +1,13 @@
 # Code Quiz
-
 ## Description
 
-
+The purpose of this project was to create a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code.
 
 ## Links
 
-Depository Link: 
+Repository Link: https://github.com/zavaletaosv/Code-Quiz
 
-Deployed Website Link: 
+Deployed Website Link: https://zavaletaosv.github.io/Code-Quiz/
 ## Usage
 
 Once deployed, the application appears as the image attached below on a traditional desktop.
