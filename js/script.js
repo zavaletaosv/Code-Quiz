@@ -118,3 +118,4 @@ function saveScore() {
     }
 }
 startButton.onclick = quizStart;
+submitButton.onclick = saveScore;
