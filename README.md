@@ -18,6 +18,12 @@ alt = "A screenshot of the Quiz start page" />
 
 ## Resources
 
+https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS
+
+https://www.w3schools.com/js/js_api_web_storage.asp
+
+https://www.w3schools.com/js/js_events.asp
+
 
 
 ## Credits
