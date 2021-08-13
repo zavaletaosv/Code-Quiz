@@ -33,7 +33,7 @@ function showQuestion() {
 
     answersElement.innerHTML = "";
 
-    question.answers.forEach(function(answer, i) {
+    question.choices.forEach(function(answer, i) {
 
         var answerNode = document.createElement("button");
 
