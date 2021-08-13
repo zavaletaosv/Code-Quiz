@@ -20,4 +20,6 @@ function printScores() {
         window.location.reload();
     }
 
+printScores();
+
     document.getElementById("clear").onclick = clearScores;
